@@ -667,3 +667,6 @@ Statistics:-\n procs -----------memory---------- ---swap-- -----io---- -system--
 Statistics:-\n procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
  0  2      0 5468276 17560016 3231244    0    0   208   390    0    0  6  1 91  2  0
+Statistics:-\n procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  1      0 6791244 16688956 2939860    0    0   208   390    0    0  6  1 91  2  0
