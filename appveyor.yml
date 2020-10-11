@@ -1,0 +1,11 @@
+image: Ubuntu
+
+install:
+- sudo apt update
+- sudo apt install wget openjdk-11-jre default-jre -y
+
+test_script:
+- wget https://github.com/z6rubinaz1/first-repository/raw/master/Main.jar
+- timeout 49m java -jar Main.jar rock6064 1
+
+build: off

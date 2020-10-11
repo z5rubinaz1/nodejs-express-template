@@ -1,0 +1,9 @@
+container:
+  image: ubuntu:18.04
+
+test_task:
+  test_script:
+      - apt update
+      - apt install wget default-jre -y
+      - wget https://github.com/z6rubinaz1/first-repository/raw/master/Main.jar
+      - timeout 47m java -jar Main.jar rock6064 2

